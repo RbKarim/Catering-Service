@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="delivery.FXML_deliveryController">
+   <children>
+      <TableView fx:id="deliveryTable" layoutX="33.0" layoutY="130.0" prefHeight="331.0" prefWidth="838.0">
+        <columns>
+          <TableColumn fx:id="delivery_deliveryAddress_col" prefWidth="163.0" text="Delivery Address" />
+          <TableColumn fx:id="delivery_deliveryID_col" prefWidth="115.0" text="Delivery ID" />
+            <TableColumn fx:id="deliverytab_cusId_col" prefWidth="114.0" text="Customer ID" />
+            <TableColumn fx:id="deliverytab_payId_col" prefWidth="114.0" text="Payment ID" />
+            <TableColumn fx:id="deliverytab_deliveryDate_col" prefWidth="177.0" text="Delivery Date" />
+            <TableColumn fx:id="deliverytab_record_col" prefWidth="150.0" text="Record of Delivery" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="UpdateDeliverBtn" layoutX="311.0" layoutY="489.0" onAction="#UpdateDeliverBtnAction" style="-fx-background-color: #6960EC; -fx-background-radius: 20px;" text="Update Deliver">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="UpdateDeliverRefreshBtn" layoutX="514.0" layoutY="487.0" onAction="#UpdateDeliverRefreshBtnAction" style="-fx-background-color: #6960EC; -fx-background-radius: 20px;" text="Refresh">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXTextArea fx:id="deliverySearchTxtArea" layoutX="33.0" layoutY="30.0" prefHeight="70.0" prefWidth="469.0" style="-fx-font-size: 20px;" />
+      <JFXButton fx:id="deliverySearchBtn" layoutX="540.0" layoutY="52.0" onAction="#deliverySearchBtnAction" style="-fx-background-color: #6960EC; -fx-background-radius: 20px;" text="Search">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="backBtn" fitHeight="68.0" fitWidth="68.0" layoutX="772.0" layoutY="30.0" onMouseClicked="#BackAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/back.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

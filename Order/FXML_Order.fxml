@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Order.FXML_OrderController">
+   <children>
+      <ImageView fitHeight="613.0" fitWidth="953.0" layoutX="-13.0" opacity="0.63" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/istockphoto-637765812-612x612.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="OrderTable" layoutX="84.0" layoutY="110.0" prefHeight="283.0" prefWidth="777.0">
+        <columns>
+          <TableColumn fx:id="item_id" prefWidth="280.0" style="-fx-font-size: 20px;" text="Item ID" />
+          <TableColumn fx:id="item_quantity" minWidth="0.0" prefWidth="204.0" style="-fx-font-size: 20px;" text="Quantity" />
+            <TableColumn fx:id="item_totalperprice" prefWidth="350.0" style="-fx-font-size: 20px;" text="Total Price Per Item" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="order_proceed" layoutX="414.0" layoutY="518.0" onAction="#order_proceed_onclick" style="-fx-background-color: #6960EC; -fx-background-radius: 20px;" text="Proceed" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="566.0" layoutY="406.0" prefHeight="76.0" prefWidth="315.0" style="-fx-background-color: #d8d8d8; -fx-background-radius: 20px;">
+         <children>
+            <Label layoutX="14.0" layoutY="11.0" prefHeight="48.0" prefWidth="136.0" style="-fx-background-color: #d8d8d8;" text=" Total Amount">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalAmount" layoutX="158.0" layoutY="7.0" prefHeight="56.0" prefWidth="143.0" text="Amount">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="calculate_totalAmount" layoutX="385.0" layoutY="422.0" onAction="#calculate_totalAmount_onclick" style="-fx-background-color: #6960EC; -fx-background-radius: 20px;" text="Calculate Total" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="backBtn" fitHeight="68.0" fitWidth="68.0" layoutX="840.0" layoutY="32.0" onMouseClicked="#BackAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/back.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

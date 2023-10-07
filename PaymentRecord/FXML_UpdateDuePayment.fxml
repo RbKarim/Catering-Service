@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="UpdateDue" fx:id="updateDuePane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #76124c, #672e68, #51417a, #395081, #2a5c80, #446788, #597291, #6c7e99, #9590aa, #b9a3b7, #d7b9c2, #efd2d0);" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="PaymentRecord.FXML_UpdateDuePaymentController">
+   <children>
+      <ImageView fitHeight="107.0" fitWidth="102.0" layoutX="259.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="124.0" layoutY="245.0" prefHeight="46.0" prefWidth="102.0" text="Due:" textFill="#141414">
+         <font>
+            <Font name="Berlin Sans FB" size="41.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="updateDueTxtField" focusColor="WHITE" layoutX="234.0" layoutY="252.0" prefHeight="31.0" prefWidth="206.0" style="-fx-text-fill: white;" unFocusColor="BLACK" />
+      <JFXButton fx:id="doneUpdateBtn" layoutX="275.0" layoutY="328.0" onAction="#doneUpdateBtnAction" prefHeight="54.0" prefWidth="102.0" style="-fx-background-color: #6960EC; -fx-background-radius: 20px;" text="Done">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="239.0" layoutY="138.0" prefHeight="31.0" prefWidth="157.0" text="SRS Catering" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
